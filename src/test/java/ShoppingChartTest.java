@@ -54,7 +54,7 @@ public class ShoppingChartTest {
     }
 
     @Test
-    public void whenGivenCamgainFoodCategoryRate50Auantity5DiscountRateExpectedResultTrue() {
+    public void whenGivenCampaignFoodCategoryRate50Quantity5DiscountRateExpectedResultTrue() {
         shoppingCart.addItem(almond, 2);
         shoppingCart.addItem(almond, 3);
         Campaign campaign1 = new Campaign(food, 50.0, 5, DiscountType.RATE);
@@ -64,7 +64,7 @@ public class ShoppingChartTest {
     }
 
     @Test
-    public void whenGivenCamgainFoodCategoryRate50Auantity5DiscountAmountExpectedResultTrue() {
+    public void whenGivenCampaignFoodCategoryRate50Quantity5DiscountAmountExpectedResultTrue() {
         shoppingCart.addItem(almond, 2);
         shoppingCart.addItem(almond, 3);
         Campaign campaign3 = new Campaign(food, 5.0, 5, DiscountType.AMOUNT);
@@ -99,7 +99,7 @@ public class ShoppingChartTest {
     }
 
     @Test
-    public void whenGiven3CampaignAndOneCoupen_ExpectedTrue() {
+    public void whenGiven3CampaignAndOneCoupon_ExpectedTrue() {
         shoppingCart.addItem(almond, 2);
         shoppingCart.addItem(almond, 3);
         shoppingCart.addItem(pencil, 5);
@@ -113,7 +113,7 @@ public class ShoppingChartTest {
     }
 
     @Test
-    public void whenGiven3CampaignAndOneCoupen_ExpectedTotalDiscountIsTrue() {
+    public void whenGiven3CampaignAndOneCoupon_ExpectedTotalDiscountIsTrue() {
         shoppingCart.addItem(almond, 2);
         shoppingCart.addItem(almond, 3);
         shoppingCart.addItem(pencil, 5);
