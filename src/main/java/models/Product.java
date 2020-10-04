@@ -2,24 +2,24 @@ package models;
 
 public class Product {
 
-    private String name;
+    private String title;
     private Double price;
     private Category category;
 
-    public Product(String name, Double price, Category category) {
-        this.name = name;
+    public Product(String title, Double price, Category category) {
+        this.title = title;
         this.price = price;
         this.category = category;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
+
 
     public Double getPrice() {
         return price;
     }
-
 
     public Category getCategory() {
         return category;

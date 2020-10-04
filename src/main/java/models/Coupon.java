@@ -20,10 +20,10 @@ public class Coupon {
             if (discountType == DiscountType.RATE)
                 return (cartAmount * rate) / 100;
             else if (discountType == DiscountType.AMOUNT)
-                return new Double(rate);
+                return Double.valueOf(rate);
             else
                 throw new IllegalArgumentException();
         } else
-            return new Double(0);
+            return 0d;
     }
 }

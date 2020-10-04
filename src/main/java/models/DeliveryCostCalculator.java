@@ -17,7 +17,7 @@ public class DeliveryCostCalculator {
         if (Objects.isNull(amountCategoryMap) || Objects.isNull(productMap) || amountCategoryMap.isEmpty() || productMap.isEmpty())
             throw new IllegalArgumentException();
         else {
-            return (costPerDelivery * amountCategoryMap.keySet().size()) + (costPerProduct * (productMap.keySet().stream().mapToInt(item -> productMap.get(item)).sum())) + FIXED_COST;
+            return (costPerDelivery * amountCategoryMap.keySet().size()) + (costPerProduct * (productMap.keySet().stream().mapToInt(productMap::get).sum())) + FIXED_COST;
         }
     }
 }

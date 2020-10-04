@@ -13,7 +13,6 @@ public class CampaignTest {
     private Campaign campaignAmount;
 
     @Before
-
     public void init() {
         food = new Category(null, "food");
         pens = new Category(null, "pens");

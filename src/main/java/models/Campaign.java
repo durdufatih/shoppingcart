@@ -22,7 +22,7 @@ public class Campaign {
             throw new IllegalArgumentException();
         }
         if (!category.equals(this.category)) {
-            return new Double(0);
+            return 0d;
         } else {
             if (quantity >= this.quantity) {
                 if (this.discountType == DiscountType.RATE) {
@@ -30,8 +30,7 @@ public class Campaign {
                 } else if (this.discountType == DiscountType.AMOUNT) {
                     return rate;
                 }
-            } else if (quantity < this.quantity)
-                return new Double(0);
+            } else return 0d;
         }
         return discountByCategory;
     }
